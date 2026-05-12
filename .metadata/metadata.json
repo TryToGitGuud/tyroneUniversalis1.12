@@ -1,0 +1,13 @@
+{
+  "name" : "Tyrone MP Official + Victoria Universalis IV 1.12",
+  "id" : "",
+  "version" : "",
+  "supported_game_version" : "1.12.*",
+  "short_description" : "",
+  "thumbnail" : "thumbnail.png",
+  "tags" : [],
+  "relationships" : [],
+  "game_custom_data" : {
+    "multiplayer_synchronized" : true
+  }
+}

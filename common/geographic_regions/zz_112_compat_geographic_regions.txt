@@ -1,0 +1,211 @@
+﻿geographic_region_asia = {
+	short_key = "asia"
+
+	strategic_regions = {
+		sr:region_anatolia
+		sr:region_arabic
+		sr:region_persia
+		sr:region_caucasus
+		sr:region_himalayas
+		sr:region_central_asia
+		sr:region_punjab
+		sr:region_bombay
+		sr:region_central_india
+		sr:region_madras
+		sr:region_bengal
+		sr:region_south_china
+		sr:region_north_china
+		sr:region_manchuria
+		sr:region_japan
+		sr:region_indochina
+		sr:region_indonesia
+	}
+}
+
+geographic_region_burma = {
+	short_key = "burma"
+
+	state_regions = {
+		STATE_KACHIN
+		STATE_SHAN_STATES
+		STATE_MANDALAY
+		STATE_PEGU
+		STATE_ARAKAN
+		STATE_TENASSERIM
+	}
+}
+
+geographic_region_caucasus_old = {
+	short_key = "caucasus"
+
+	strategic_regions = {
+		sr:region_caucasus
+	}
+}
+
+geographic_region_central_asia_old = {
+	short_key = "central_asia"
+
+	strategic_regions = {
+		sr:region_himalayas
+		sr:region_central_asia
+	}
+}
+
+geographic_region_england_old = {
+	short_key = "england"
+
+	strategic_regions = {
+		sr:region_england
+	}
+}
+
+geographic_region_greater_persia = {
+	short_key = "greater_persia"
+
+	strategic_regions = {
+		sr:region_persia
+		sr:region_caucasus
+	}
+}
+
+geographic_region_home_islands = {
+	short_key = "home_islands"
+
+	state_regions = {
+		STATE_HOKKAIDO
+		STATE_TOHOKU
+		STATE_KANTO
+		STATE_CHUBU
+		STATE_KANSAI
+		STATE_CHUGOKU
+		STATE_SHIKOKU
+		STATE_KYUSHU
+	}
+}
+
+geographic_region_honshu = {
+	short_key = "honshu"
+
+	state_regions = {
+		STATE_TOHOKU
+		STATE_KANTO
+		STATE_CHUBU
+		STATE_KANSAI
+		STATE_CHUGOKU
+	}
+}
+
+geographic_region_iberia_old = {
+	short_key = "iberia"
+
+	strategic_regions = {
+		sr:region_iberia
+	}
+}
+
+geographic_region_indonesia = {
+	short_key = "indonesia"
+
+	strategic_regions = {
+		sr:region_indonesia
+	}
+}
+
+geographic_region_italy_old = {
+	short_key = "italy"
+
+	strategic_regions = {
+		sr:region_italy
+	}
+}
+
+geographic_region_korea = {
+	short_key = "korea"
+
+	state_regions = {
+		STATE_SEOUL
+		STATE_BUSAN
+		STATE_YANGHO
+		STATE_SARIWON
+		STATE_PYONGYANG
+	}
+}
+
+geographic_region_new_world = {
+	short_key = "new_world"
+
+	strategic_regions = {
+		sr:region_canada
+		sr:region_new_england
+		sr:region_pacific_coast
+		sr:region_great_plains
+		sr:region_the_midwest
+		sr:region_dixie
+		sr:region_central_america
+		sr:region_mexico
+		sr:region_caribbean
+		sr:region_andes
+		sr:region_gran_colombia
+		sr:region_la_plata
+		sr:region_brazil
+	}
+}
+
+geographic_region_old_world = {
+	short_key = "old_world"
+
+	strategic_regions = {
+		sr:region_north_germany
+		sr:region_south_germany
+		sr:region_england
+		sr:region_iberia
+		sr:region_france
+		sr:region_occitania
+		sr:region_rhine
+		sr:region_italy
+		sr:region_poland
+		sr:region_danubia
+		sr:region_balkans
+		sr:region_baltic
+		sr:region_russia
+		sr:region_dnieper
+		sr:region_belarus
+		sr:region_finland
+		sr:region_baltic_states
+		sr:region_north_sea_coast
+		sr:region_north_africa
+		sr:region_nile_basin
+		sr:region_senegal
+		sr:region_niger
+		sr:region_zanj
+		sr:region_congo
+		sr:region_southern_africa
+		sr:region_anatolia
+		sr:region_arabic
+		sr:region_persia
+		sr:region_caucasus
+		sr:region_himalayas
+		sr:region_central_asia
+		sr:region_punjab
+		sr:region_bombay
+		sr:region_central_india
+		sr:region_madras
+		sr:region_bengal
+		sr:region_south_china
+		sr:region_north_china
+		sr:region_manchuria
+		sr:region_japan
+		sr:region_indochina
+		sr:region_indonesia
+	}
+}
+
+geographic_region_persia_old = {
+	short_key = "persia"
+
+	strategic_regions = {
+		sr:region_persia
+	}
+}
+
