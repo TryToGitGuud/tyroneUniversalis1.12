@@ -1,7 +1,8 @@
 gbr_idea_tradition_1 = {
 	icon = gfx/interface/intelligensia.dds
-	ship_armor_mult = 0.35
-	ship_hull_damage_mult = 0.35
+	unit_navy_defense_add = 10
+	unit_navy_offense_add = 10
+
 }
 
 gbr_idea_tradition_2 = {
