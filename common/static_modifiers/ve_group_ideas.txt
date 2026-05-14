@@ -317,7 +317,7 @@ qualification_idea_7_mdf = {
 
 naval_idea_1_mdf = {
 	icon = gfx/interface/icon_ideas.dds
-	unit_convoy_requirements_mult = -0.1
+	unit_supply_consumption_mult = -0.15
 }
 
 naval_idea_2_mdf = {
