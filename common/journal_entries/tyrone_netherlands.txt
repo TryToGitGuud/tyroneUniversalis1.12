@@ -196,39 +196,19 @@ REPLACE:je_reform_indies = {
 	}
 
 	is_shown_in_lobby = {
-		OR = {
-			c:DEI ?= THIS
-			any_subject_or_below = {
-				c:DEI ?= THIS
-			}
-		}
+		exists = c:DEI
 	}
 
 	should_be_involved = {
-		OR = {
-			c:DEI ?= THIS
-			any_subject_or_below = {
-				c:DEI ?= THIS
-			}
-		}
+		exists = c:DEI
 	}
 
 	is_shown_when_inactive = {
-		OR = {
-			c:DEI ?= THIS
-			any_subject_or_below = {
-				c:DEI ?= THIS
-			}
-		}
+		exists = c:DEI
 	}
 
 	should_show_when_not_involved = {
-		OR = {
-			c:DEI ?= THIS
-			any_subject_or_below = {
-				c:DEI ?= THIS
-			}
-		}
+		exists = c:DEI
 	}
 
 	possible = {
@@ -247,7 +227,10 @@ REPLACE:je_reform_indies = {
 	complete = {
 		custom_tooltip = {
 			text = dei_gdp_reached_50_tt
-      	 	c:DEI.gdp > c:DEI.var:dei_gdp_goal
+			c:DEI = {
+				has_variable = dei_gdp_goal
+				gdp > var:dei_gdp_goal
+			}
 		}
 		c:DEI = {
 			OR = {
@@ -279,7 +262,10 @@ REPLACE:je_reform_indies = {
 	fail = {
 		custom_tooltip = {
 			text = dei_gdp_reached_50_tt
-      	 	c:DEI.gdp > c:DEI.var:dei_gdp_goal
+			c:DEI = {
+				has_variable = dei_gdp_goal
+				gdp > var:dei_gdp_goal
+			}
 		}
 		c:DEI = {
 			OR = {

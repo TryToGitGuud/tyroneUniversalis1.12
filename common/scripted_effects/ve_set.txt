@@ -529,30 +529,30 @@ set_national_idea = {
 	if = {
 		limit = {
 			NOR = {
-				this = c:GBR
-				this = c:FRA
-				this = c:GER
-				this = c:SGF
-				this = c:NGF
-				this = c:PRU
-				this = c:AUS
-				this = c:RUS
-				this = c:TUR
-				this = c:CHI
-				this = c:JAP
-				this = c:USA
-				this = c:SAR
-				this = c:ITA
-				this = c:SPA
-				this = c:IBE
-				this = c:PER
-				this = c:ki_ANS
-				this = c:IRE
-				this = c:ki_CEL
-				this = c:BRZ
-				this = c:POL
-				this = c:KRA
-				this = c:PLC
+				c:GBR ?= this
+				c:FRA ?= this
+				c:GER ?= this
+				c:SGF ?= this
+				c:NGF ?= this
+				c:PRU ?= this
+				c:AUS ?= this
+				c:RUS ?= this
+				c:TUR ?= this
+				c:CHI ?= this
+				c:JAP ?= this
+				c:USA ?= this
+				c:SAR ?= this
+				c:ITA ?= this
+				c:SPA ?= this
+				c:IBE ?= this
+				c:PER ?= this
+				c:ki_ANS ?= this
+				c:IRE ?= this
+				c:ki_CEL ?= this
+				c:BRZ ?= this
+				c:POL ?= this
+				c:KRA ?= this
+				c:PLC ?= this
 			}
 		}
 		set_variable = generic_idea_country
@@ -680,7 +680,7 @@ national_idea_traditions = {
 	if = {
 		limit = {
 			exists = c:GBR
-			this = c:GBR
+			c:GBR ?= this
 		}
 		if = {
 			limit = {
@@ -702,7 +702,7 @@ national_idea_traditions = {
 	else_if = {
 		limit = {
 			exists = c:FRA
-			this = c:FRA
+			c:FRA ?= this
 		}
 		if = {
 			limit = {
@@ -724,7 +724,7 @@ national_idea_traditions = {
 	else_if = {
 		limit = {
 			exists = c:GER
-			this = c:GER
+			c:GER ?= this
 		}
 		if = {
 			limit = {
@@ -746,7 +746,7 @@ national_idea_traditions = {
 	else_if = {
 		limit = {
 			exists = c:PRU
-			this = c:PRU
+			c:PRU ?= this
 		}
 		if = {
 			limit = {
@@ -768,7 +768,7 @@ national_idea_traditions = {
 	else_if = {
 		limit = {
 			exists = c:NGF
-			this = c:NGF
+			c:NGF ?= this
 		}
 		if = {
 			limit = {
@@ -790,7 +790,7 @@ national_idea_traditions = {
 	else_if = {
 		limit = {
 			exists = c:SGF
-			this = c:SGF
+			c:SGF ?= this
 		}
 		if = {
 			limit = {
@@ -812,7 +812,7 @@ national_idea_traditions = {
 	else_if = {
 		limit = {
 			exists = c:AUS
-			this = c:AUS
+			c:AUS ?= this
 		}
 		if = {
 			limit = {
@@ -834,7 +834,7 @@ national_idea_traditions = {
 	else_if = {
 		limit = {
 			exists = c:RUS
-			this = c:RUS
+			c:RUS ?= this
 		}
 		if = {
 			limit = {
@@ -856,7 +856,7 @@ national_idea_traditions = {
 	else_if = {
 		limit = {
 			exists = c:TUR
-			this = c:TUR
+			c:TUR ?= this
 		}
 		if = {
 			limit = {
@@ -878,7 +878,7 @@ national_idea_traditions = {
 	else_if = {
 		limit = {
 			exists = c:CHI
-			this = c:CHI
+			c:CHI ?= this
 		}
 		if = {
 			limit = {
@@ -900,7 +900,7 @@ national_idea_traditions = {
 	else_if = {
 		limit = {
 			exists = c:JAP
-			this = c:JAP
+			c:JAP ?= this
 		}
 		if = {
 			limit = {
@@ -922,7 +922,7 @@ national_idea_traditions = {
 	else_if = {
 		limit = {
 			exists = c:USA
-			this = c:USA
+			c:USA ?= this
 		}
 		if = {
 			limit = {
@@ -946,11 +946,11 @@ national_idea_traditions = {
 			OR = {
 				AND = {
 					exists = c:SAR
-					this = c:SAR
+					c:SAR ?= this
 				}
 				AND = {
 					exists = c:ITA
-					this = c:ITA
+					c:ITA ?= this
 				}
 			}
 		}
@@ -976,11 +976,11 @@ national_idea_traditions = {
 			OR = {
 				AND = {
 					exists = c:SPA
-					this = c:SPA
+					c:SPA ?= this
 				}
 				AND = {
 					exists = c:IBE
-					this = c:IBE
+					c:IBE ?= this
 				}
 			}
 		}
@@ -1006,11 +1006,11 @@ national_idea_traditions = {
 			OR = {
 				AND = {
 					exists = c:PER
-					this = c:PER
+					c:PER ?= this
 				}
 				AND = {
 					exists = c:ki_ANS
-					this = c:ki_ANS
+					c:ki_ANS ?= this
 				}
 			}
 		}
@@ -1036,11 +1036,11 @@ national_idea_traditions = {
 			OR = {
 				AND = {
 					exists = c:IRE
-					this = c:IRE
+					c:IRE ?= this
 				}
 				AND = {
 					exists = c:ki_CEL
-					this = c:ki_CEL
+					c:ki_CEL ?= this
 				}
 			}
 		}
@@ -1064,7 +1064,7 @@ national_idea_traditions = {
 	else_if = {
 		limit = {
 			exists = c:BRZ
-			this = c:BRZ
+			c:BRZ ?= this
 		}
 		if = {
 			limit = {
@@ -1088,15 +1088,15 @@ national_idea_traditions = {
 			OR = {
 				AND = {
 					exists = c:POL
-					this = c:POL
+					c:POL ?= this
 				}
 				AND = {
 					exists = c:KRA
-					this = c:KRA
+					c:KRA ?= this
 				}
 				AND = {
 					exists = c:PLC
-					this = c:PLC
+					c:PLC ?= this
 				}
 			}
 		}

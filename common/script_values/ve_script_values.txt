@@ -526,27 +526,6 @@ monthly_splender_points = {
 					}
 					army_size >= 350
 					leading_producer_of = g:oil
-					NOT = {
-						any_scope_state = {
-							owner = ROOT
-							any_scope_building = {
-								is_building_type = building_barracks
-								OR = {
-									has_active_production_method = pm_irregular_infantry
-									has_active_production_method = pm_line_infantry
-									has_active_production_method = pm_skirmish_infantry
-									has_active_production_method = pm_trench_infantry
-									has_active_production_method = pm_squad_infantry
-								}
-								OR = {
-									has_active_production_method = pm_no_artillery
-									has_active_production_method = pm_cannon_artillery
-									has_active_production_method = pm_mobile_artillery
-									has_active_production_method = pm_shrapnel_artillery
-								}
-							}
-						}
-					}
 					GDP >= 1000000000
 					global_country_ranking = 1
 				}
@@ -592,27 +571,6 @@ monthly_splender_points = {
 					}
 					army_size >= 350
 					leading_producer_of = g:oil
-					NOT = {
-						any_scope_state = {
-							owner = ROOT
-							any_scope_building = {
-								is_building_type = building_barracks
-								OR = {
-									has_active_production_method = pm_irregular_infantry
-									has_active_production_method = pm_line_infantry
-									has_active_production_method = pm_skirmish_infantry
-									has_active_production_method = pm_trench_infantry
-									has_active_production_method = pm_squad_infantry
-								}
-								OR = {
-									has_active_production_method = pm_no_artillery
-									has_active_production_method = pm_cannon_artillery
-									has_active_production_method = pm_mobile_artillery
-									has_active_production_method = pm_shrapnel_artillery
-								}
-							}
-						}
-					}
 					GDP >= 1000000000
 					global_country_ranking = 1
 				}
@@ -658,27 +616,6 @@ monthly_splender_points = {
 					}
 					army_size >= 350
 					leading_producer_of = g:oil
-					NOT = {
-						any_scope_state = {
-							owner = ROOT
-							any_scope_building = {
-								is_building_type = building_barracks
-								OR = {
-									has_active_production_method = pm_irregular_infantry
-									has_active_production_method = pm_line_infantry
-									has_active_production_method = pm_skirmish_infantry
-									has_active_production_method = pm_trench_infantry
-									has_active_production_method = pm_squad_infantry
-								}
-								OR = {
-									has_active_production_method = pm_no_artillery
-									has_active_production_method = pm_cannon_artillery
-									has_active_production_method = pm_mobile_artillery
-									has_active_production_method = pm_shrapnel_artillery
-								}
-							}
-						}
-					}
 					GDP >= 1000000000
 					global_country_ranking = 1
 				}
@@ -724,27 +661,6 @@ monthly_splender_points = {
 					}
 					army_size >= 350
 					leading_producer_of = g:oil
-					NOT = {
-						any_scope_state = {
-							owner = ROOT
-							any_scope_building = {
-								is_building_type = building_barracks
-								OR = {
-									has_active_production_method = pm_irregular_infantry
-									has_active_production_method = pm_line_infantry
-									has_active_production_method = pm_skirmish_infantry
-									has_active_production_method = pm_trench_infantry
-									has_active_production_method = pm_squad_infantry
-								}
-								OR = {
-									has_active_production_method = pm_no_artillery
-									has_active_production_method = pm_cannon_artillery
-									has_active_production_method = pm_mobile_artillery
-									has_active_production_method = pm_shrapnel_artillery
-								}
-							}
-						}
-					}
 					GDP >= 1000000000
 					global_country_ranking = 1
 				}
@@ -790,27 +706,6 @@ monthly_splender_points = {
 					}
 					army_size >= 350
 					leading_producer_of = g:oil
-					NOT = {
-						any_scope_state = {
-							owner = ROOT
-							any_scope_building = {
-								is_building_type = building_barracks
-								OR = {
-									has_active_production_method = pm_irregular_infantry
-									has_active_production_method = pm_line_infantry
-									has_active_production_method = pm_skirmish_infantry
-									has_active_production_method = pm_trench_infantry
-									has_active_production_method = pm_squad_infantry
-								}
-								OR = {
-									has_active_production_method = pm_no_artillery
-									has_active_production_method = pm_cannon_artillery
-									has_active_production_method = pm_mobile_artillery
-									has_active_production_method = pm_shrapnel_artillery
-								}
-							}
-						}
-					}
 					GDP >= 1000000000
 					global_country_ranking = 1
 				}
@@ -856,27 +751,6 @@ monthly_splender_points = {
 					}
 					army_size >= 350
 					leading_producer_of = g:oil
-					NOT = {
-						any_scope_state = {
-							owner = ROOT
-							any_scope_building = {
-								is_building_type = building_barracks
-								OR = {
-									has_active_production_method = pm_irregular_infantry
-									has_active_production_method = pm_line_infantry
-									has_active_production_method = pm_skirmish_infantry
-									has_active_production_method = pm_trench_infantry
-									has_active_production_method = pm_squad_infantry
-								}
-								OR = {
-									has_active_production_method = pm_no_artillery
-									has_active_production_method = pm_cannon_artillery
-									has_active_production_method = pm_mobile_artillery
-									has_active_production_method = pm_shrapnel_artillery
-								}
-							}
-						}
-					}
 					GDP >= 1000000000
 					global_country_ranking = 1
 				}
@@ -922,27 +796,6 @@ monthly_splender_points = {
 					}
 					army_size >= 350
 					leading_producer_of = g:oil
-					NOT = {
-						any_scope_state = {
-							owner = ROOT
-							any_scope_building = {
-								is_building_type = building_barracks
-								OR = {
-									has_active_production_method = pm_irregular_infantry
-									has_active_production_method = pm_line_infantry
-									has_active_production_method = pm_skirmish_infantry
-									has_active_production_method = pm_trench_infantry
-									has_active_production_method = pm_squad_infantry
-								}
-								OR = {
-									has_active_production_method = pm_no_artillery
-									has_active_production_method = pm_cannon_artillery
-									has_active_production_method = pm_mobile_artillery
-									has_active_production_method = pm_shrapnel_artillery
-								}
-							}
-						}
-					}
 					GDP >= 1000000000
 					global_country_ranking = 1
 				}
@@ -1167,11 +1020,17 @@ total_missionaries = {
 }
 
 avaible_culture_missionaries = {
-	add = var:avaible_culture_missionaries
+	if = {
+		limit = { has_variable = avaible_culture_missionaries }
+		add = var:avaible_culture_missionaries
+	}
 }
 
 total_culture_missionaries = {
-	add = var:total_culture_missionaries
+	if = {
+		limit = { has_variable = total_culture_missionaries }
+		add = var:total_culture_missionaries
+	}
 }
 
 ve_set_religion_law_effects = {

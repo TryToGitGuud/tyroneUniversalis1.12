@@ -67,7 +67,9 @@ treasury_buy_shares = {
 		base = 10 
 		if = {
 			limit = {
-				net_total_income >= 0
+				c:GBR = {
+					net_total_income >= 0
+				}
 			}
 			add = 20
 		}
@@ -144,7 +146,9 @@ sell_shares_to_private_investors = {
 		base = 10
 		if = {
 			limit = {
-				net_total_income < 0
+				c:GBR = {
+					net_total_income < 0
+				}
 			}
 			add = 20
 		}
@@ -261,7 +265,9 @@ share_buyback_button = {
 		base = 10 
 		if = {
 			limit = {
-				net_total_income > 10000
+				c:BIC = {
+					net_total_income > 10000
+				}
 			}
 			add = 25
 		}
@@ -339,7 +345,9 @@ sell_shares_to_britain = {
 		base = 10 
 		if = {
 			limit = {
-				net_total_income < 0
+				c:BIC = {
+					net_total_income < 0
+				}
 			}
 			add = 25
 		}

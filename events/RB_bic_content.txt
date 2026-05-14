@@ -61,9 +61,7 @@ bic_content.1 = {
 
 	option = {
 		name = bic_content.1.a
-		add_journal_entry = {
-			type = je_company_equity
-		}
+		add_contextless_journal_entry = je_company_equity
 	}
 }
 
