@@ -40,7 +40,6 @@ je_reform_economy = {
            		has_law_or_variant = law_type:law_interventionism
 				OR = {
 					has_law_or_variant = law_type:law_autocracy
-					has_law_or_variant = law_type:law_neo_absolutism
 					has_law_or_variant = law_type:law_oligarchy
 					has_law_or_variant = law_type:law_organic_regulation
 					has_law_or_variant = law_type:law_single_party_state

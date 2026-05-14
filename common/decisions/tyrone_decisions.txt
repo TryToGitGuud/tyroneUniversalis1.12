@@ -1378,10 +1378,6 @@ british_hbc = {
 	is_shown = {
 		exists = c:HBC
 		root = c:GBR
-		OR = {
-			c:QUE ?= exists
-			c:ONT ?= exists
-		}
 		NOT = { has_variable = annex_hbc }
 		any_subject_or_below = {
 			OR = {
@@ -1389,23 +1385,25 @@ british_hbc = {
 				country_has_primary_culture = cu:franco_canadian
 			}
 		}
-		c:ONT = {
-			is_subject_of = ROOT
-		}
-		c:QUE = {
-			is_subject_of = ROOT
+		OR = {
+			c:ONT ?= {
+				is_subject_of = ROOT
+			}
+			c:QUE ?= {
+				is_subject_of = ROOT
+			}
 		}
 	}
 	
 	possible = {
 		OR = {
-			c:ONT = {
+			c:ONT ?= {
 				relations:root >= relations_threshold:cordial
 				hidden_trigger = {
 					is_subject_of = ROOT
 				}
 			}
-			c:QUE = {
+			c:QUE ?= {
 				relations:root >= relations_threshold:cordial
 				hidden_trigger = {
 					is_subject_of = ROOT

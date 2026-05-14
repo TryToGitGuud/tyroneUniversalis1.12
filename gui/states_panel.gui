@@ -1241,100 +1241,6 @@ types state_panel_types
 			}
 		}
 
-		flowcontainer = {
-			margin = { 10 10 }
-			spacing = 10
-			widget = {
-				size = {
-					550 100
-				}
-				hbox = {
-					layoutpolicy_horizontal = expanding
-					background = {
-						using = entry_bg_simple
-					}
-					hbox = {
-						layoutpolicy_horizontal = shrinking
-						hbox = {
-							icon = {
-								texture = "gfx/interface/global_missionary_strength.dds"
-								size = {
-									80
-									80
-								}
-							}
-						}
-						vbox = {
-							spacing = 10
-							text_single = {
-								text = "ve_send_missionary"
-								tooltip = "ve_send_missionary_tt"
-							}
-							button = {
-								size = { 100 40 }
-								text = "ve_send"
-								using = default_button_action
-								tooltip = "[GetScriptedGui('ve_send_missionary').BuildTooltip( GuiScope.SetRoot( StatesPanel.GetState.MakeScope ).AddScope('country',GetPlayer.MakeScope).End )]"
-								onclick = "[GetScriptedGui('ve_send_missionary').Execute( GuiScope.SetRoot(StatesPanel.GetState.MakeScope).AddScope('country',GetPlayer.MakeScope).End )]"
-								enabled = "[GetScriptedGui('ve_send_missionary').IsValid( GuiScope.SetRoot(StatesPanel.GetState.MakeScope).AddScope('country',GetPlayer.MakeScope).End )]"
-								visible = "[GetScriptedGui('ve_send_missionary').IsShown(GuiScope.SetRoot(StatesPanel.GetState.MakeScope).AddScope('country',GetPlayer.MakeScope).End)]"
-								using = ui_close
-							}
-							button = {
-								size = { 100 40 }
-								text = "ve_return"
-								using = default_button_action
-								tooltip = "[GetScriptedGui('ve_return_missionary').BuildTooltip( GuiScope.SetRoot( StatesPanel.GetState.MakeScope ).AddScope('country3',GetPlayer.MakeScope).End )]"
-								onclick = "[GetScriptedGui('ve_return_missionary').Execute( GuiScope.SetRoot(StatesPanel.GetState.MakeScope).AddScope('country3',GetPlayer.MakeScope).End )]"
-								enabled = "[GetScriptedGui('ve_return_missionary').IsValid( GuiScope.SetRoot(StatesPanel.GetState.MakeScope).AddScope('country3',GetPlayer.MakeScope).End )]"
-								visible = "[GetScriptedGui('ve_return_missionary').IsShown(GuiScope.SetRoot(StatesPanel.GetState.MakeScope).AddScope('country3',GetPlayer.MakeScope).End)]"
-								using = ui_close
-							}
-						}
-					}
-					hbox = {
-						layoutpolicy_horizontal = shrinking
-						hbox = {
-							icon = {
-								texture = "gfx/interface/culture_conversion_cost.dds"
-								size = {
-									80
-									80
-								}
-							}
-						}
-						vbox = {
-							spacing = 10
-							text_single = {
-								text = "ve_send_cultural_missionary"
-								tooltip = "ve_send_cultural_missionary_tt"
-								align = center|nobaseline
-							}
-							button = {
-								size = { 100 40 }
-								text = "ve_send"
-								using = default_button_action
-								tooltip = "[GetScriptedGui('ve_send_diffusionist').BuildTooltip( GuiScope.SetRoot( StatesPanel.GetState.MakeScope ).AddScope('country2',GetPlayer.MakeScope).End )]"
-								onclick = "[GetScriptedGui('ve_send_diffusionist').Execute( GuiScope.SetRoot(StatesPanel.GetState.MakeScope).AddScope('country2',GetPlayer.MakeScope).End )]"
-								enabled = "[GetScriptedGui('ve_send_diffusionist').IsValid( GuiScope.SetRoot(StatesPanel.GetState.MakeScope).AddScope('country2',GetPlayer.MakeScope).End )]"
-								visible = "[GetScriptedGui('ve_send_diffusionist').IsShown(GuiScope.SetRoot(StatesPanel.GetState.MakeScope).AddScope('country2',GetPlayer.MakeScope).End)]"
-								using = ui_close
-							}
-							button = {
-								size = { 100 40 }
-								text = "ve_return"
-								using = default_button_action
-								tooltip = "[GetScriptedGui('ve_return_diffusionist').BuildTooltip( GuiScope.SetRoot( StatesPanel.GetState.MakeScope ).AddScope('country4',GetPlayer.MakeScope).End )]"
-								onclick = "[GetScriptedGui('ve_return_diffusionist').Execute( GuiScope.SetRoot(StatesPanel.GetState.MakeScope).AddScope('country4',GetPlayer.MakeScope).End )]"
-								enabled = "[GetScriptedGui('ve_return_diffusionist').IsValid( GuiScope.SetRoot(StatesPanel.GetState.MakeScope).AddScope('country4',GetPlayer.MakeScope).End )]"
-								visible = "[GetScriptedGui('ve_return_diffusionist').IsShown(GuiScope.SetRoot(StatesPanel.GetState.MakeScope).AddScope('country4',GetPlayer.MakeScope).End)]"
-								using = ui_close
-							}
-						}
-					}
-				}
-			}
-		}
 
 		flowcontainer = {
 			margin = { 10 10 }
@@ -1880,8 +1786,7 @@ types state_panel_types
 			}
 
 			state_panel_status_item_small = {
-				visible = "[State.GetStateRegion.HasDevastation]"
-				datacontext = "[State.GetStateRegion]"
+				visible = "[State.HasDevastation]"
 				tooltip = "TOOLTIP_STATE_DEVASTATION"
 
 				blockoverride "texture" {
@@ -3582,8 +3487,7 @@ types state_panel_types
 				}
 
 				state_panel_status_item_condensed = {
-					visible = "[State.GetStateRegion.HasDevastation]"
-					datacontext = "[State.GetStateRegion]"
+					visible = "[State.HasDevastation]"
 					tooltip = "TOOLTIP_STATE_DEVASTATION"
 
 					blockoverride "texture" {
@@ -3808,7 +3712,7 @@ types state_panel_types
 				}
 
 				building_item_condensed = {
-					datacontext = "[StatesPanel.AccessBuilding('building_barracks')]"
+					datacontext = "[StatesPanel.AccessBuilding('building_barrack')]"
 
 					tooltipwidget = {
 						FancyTooltip_Building = {}
@@ -3832,14 +3736,14 @@ types state_panel_types
 				}
 
 				building_item_condensed = {
-					datacontext = "[StatesPanel.AccessBuilding('building_naval_administration')]"
+					datacontext = "[StatesPanel.AccessBuilding('building_naval_base')]"
 
 					tooltipwidget = {
 						FancyTooltip_Building = {}
 					}
 
 					blockoverride "text" {
-						text = "TOTAL_NAVAL_BASE"
+						text = "TOTAL_CONSCRIPTION_CENTER"
 					}
 				}
 
@@ -3991,13 +3895,15 @@ types building_item_types
 				}
 			}
 
-			textbox = {
-				parentanchor = vcenter
-				align = nobaseline
-				autoresize = yes
-				using = fontsize_xl
-				tooltip = "[Building.GetEmploymentTooltip]"
-				text = "[Building.GetExpansionLevelDesc]"
+			block "building_levels_textbox" {
+				textbox = {
+					parentanchor = vcenter
+					align = nobaseline
+					autoresize = yes
+					using = fontsize_xl
+					tooltip = "[Building.GetEmploymentTooltip]"
+					text = "[Building.GetExpansionLevelDesc]"
+				}
 			}
 
 			button_icon_goto = {

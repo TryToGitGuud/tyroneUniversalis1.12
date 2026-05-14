@@ -682,7 +682,7 @@ prevent_annex_foreign_missionary = {
 	}
 	else_if = {
 		limit = {
-			total_missionaries < my_script_value
+			total_missionaries < active_missionary_value
 		}
 		call_missionaries_effect = yes
 	}
@@ -697,7 +697,7 @@ prevent_annex_foreign_missionary = {
 	}
 	else_if = {
 		limit = {
-			total_missionaries < my_script_value
+			total_missionaries < active_missionary_value
 		}
 		call_missionaries_effect = yes
 	}
@@ -712,7 +712,7 @@ prevent_annex_foreign_missionary = {
 	}
 	else_if = {
 		limit = {
-			total_missionaries < my_script_value
+			total_missionaries < active_missionary_value
 		}
 		call_missionaries_effect = yes
 	}
@@ -727,7 +727,7 @@ prevent_annex_foreign_missionary = {
 	}
 	else_if = {
 		limit = {
-			total_missionaries < my_script_value
+			total_missionaries < active_missionary_value
 		}
 		call_missionaries_effect = yes
 	}
@@ -742,7 +742,7 @@ prevent_annex_foreign_missionary = {
 	}
 	else_if = {
 		limit = {
-			total_missionaries < my_script_value
+			total_missionaries < active_missionary_value
 		}
 		call_missionaries_effect = yes
 	}

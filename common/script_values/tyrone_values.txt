@@ -19,6 +19,8 @@ imperial_federation_shared_laws_requirement = 45
 
 REPLACE:legitimacy_to_repeal_amendment = 0
 
+je_zaibatsu_company_slots_threshold = 1
+
 american_exceptionalism_agenda_value = {
 	value = 0
 	# --- Expansion ---

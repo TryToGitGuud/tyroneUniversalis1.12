@@ -1,17 +1,29 @@
 ﻿piety_value = {
-	add = var:piety_bar_point
+	if = {
+		limit = { has_variable = piety_bar_point }
+		add = var:piety_bar_point
+	}
 }
 
 idea_point_value = {
-	add = var:idea_point_pool
+	if = {
+		limit = { has_variable = idea_point_pool }
+		add = var:idea_point_pool
+	}
 }
 
 culture_reform_point_value = {
-	add = var:culture_reform_point
+	if = {
+		limit = { has_variable = culture_reform_point }
+		add = var:culture_reform_point
+	}
 }
 
 splender_points_value = {
-	add = var:ve_splender_points
+	if = {
+		limit = { has_variable = ve_splender_points }
+		add = var:ve_splender_points
+	}
 }
 
 monthly_splender_points = {
@@ -1141,11 +1153,17 @@ monthly_piety_points = {
 }
 
 avaible_missionaries = {
-	add = var:avaible_missionaries
+	if = {
+		limit = { has_variable = avaible_missionaries }
+		add = var:avaible_missionaries
+	}
 }
 
 total_missionaries = {
-	add = var:total_missionaries
+	if = {
+		limit = { has_variable = total_missionaries }
+		add = var:total_missionaries
+	}
 }
 
 avaible_culture_missionaries = {

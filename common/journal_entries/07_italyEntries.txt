@@ -1250,6 +1250,7 @@ ita_garibaldi_thousand_expedition_JE = {
 		has_technology_researched = nationalism
 		custom_tooltip = {
 			text = ita_garibaldi_expedition_sentiment_60_tt
+			has_variable = italian_sentiment_var
 			var:italian_sentiment_var >= 60
 		}
 		OR = {

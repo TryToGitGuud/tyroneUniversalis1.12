@@ -24,6 +24,7 @@ je_post_bonapartists = {
 		OR = {
 			custom_tooltip = {
 				text = progress_cement_half_tt
+				has_variable = french_dynastic_primary_progress_var
 				var:french_dynastic_primary_progress_var >= 60
 			}
 			custom_tooltip = {
@@ -406,6 +407,7 @@ je_orleanist_france_industry_revolution = {
         OR = {
             custom_tooltip = {
                 text = progress_cement_half_tt
+                has_variable = french_dynastic_primary_progress_var
                 var:french_dynastic_primary_progress_var >= 60
             }
             custom_tooltip = {
@@ -618,6 +620,7 @@ je_house_of_bourbon = {
 		OR = {
 			custom_tooltip = {
 				text = progress_cement_half_tt
+				has_variable = french_dynastic_primary_progress_var
 				var:french_dynastic_primary_progress_var >= 60
 			}
 			custom_tooltip = {

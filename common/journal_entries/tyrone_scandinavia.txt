@@ -5,20 +5,20 @@ je_of_two_crowns = {
 	group = je_group_scandinavian_unification
 
 	is_shown_in_lobby = {
-		c:SWE = THIS
+		c:SWE ?= this
 	}
 
 	is_shown_when_inactive= {
 		AND = {
 		hidden_trigger = { NOT = { has_global_variable = two_crowns_plus_one}}
-		c:SWE = THIS
+		c:SWE ?= this
 		}
 	}
 
 	possible = {
 		AND = {
 		hidden_trigger = { NOT = { has_global_variable = two_crowns_plus_one}}
-		c:SWE = THIS
+		c:SWE ?= this
 		has_law = law_type:law_monarchy
 		}
 		
@@ -105,7 +105,7 @@ je_unification_of_three_crowns = {
 			custom_tooltip = {
 				text = scandinavia_partially_united_alt
 				OR = {
-					c:FIN = {
+					c:FIN ?= {
 						is_subject_of = c:SWE 
 					}
 					ROOT = {
@@ -120,12 +120,12 @@ je_unification_of_three_crowns = {
 	}
 	is_shown_when_inactive = {
 		AND = {
-			c:SWE = THIS
+			c:SWE ?= this
 			has_law = law_type:law_monarchy
 		}
 	}
 	is_shown_in_lobby = {
-		c:SWE = THIS
+		c:SWE ?= this
 	}
 
 	scripted_progress_bar = je_unification_of_three_crowns_progress_bar
@@ -147,13 +147,13 @@ je_unification_of_three_crowns = {
 				text = scandinavia_no_crowns
 						
 				NOT = {
-						c:NOR = {
+						c:NOR ?= {
 							is_subject_of = c:SWE
 						}
-						c:FIN = {
+						c:FIN ?= {
 							is_subject_of = c:SWE
 						}
-						c:DEN  = {
+						c:DEN ?= {
 							is_subject_of = c:SWE
 						}
 					}			
@@ -273,7 +273,7 @@ je_securing_scandinavia = {
 	group = je_group_scandinavian_unification
 	should_be_pinned_by_default = yes
 	possible = {
-		c:SCA = THIS
+		c:SCA ?= this
 		NOT = {
 			country_has_primary_culture = cu:finnish
 		}
@@ -292,7 +292,7 @@ je_securing_scandinavia = {
 	on_complete = {
 		if = {
 			limit = {
-				c:FIN = {
+				c:FIN ?= {
 				is_subject_of = c:SCA
 				}
 			}
@@ -317,7 +317,7 @@ je_scandinavia_missing_crown_b = { #Danish acquisition if alternate unification 
 	group = je_group_scandinavian_unification
 	should_be_pinned_by_default = yes
 	possible = {
-		c:SCA = THIS
+		c:SCA ?= this
 		NOT = {
 			country_has_primary_culture = cu:danish
 		}
@@ -349,7 +349,7 @@ je_scandinavia_missing_crown_c = { #Norwegian culture acquisition as an edge cas
 	group = je_group_scandinavian_unification
 	should_be_pinned_by_default = yes
 	possible = {
-		c:SCA = THIS
+		c:SCA ?= this
 		NOT = {
 			country_has_primary_culture = cu:norwegian
 		}
@@ -363,7 +363,7 @@ je_scandinavia_missing_crown_c = { #Norwegian culture acquisition as an edge cas
 	on_complete = {
 		if = {
 			limit = {
-				c:NOR = {
+				c:NOR ?= {
 					is_subject_of = ROOT
 				}
 			}
@@ -401,14 +401,14 @@ je_scandinavian_baltic_claims = {
 	}
 	possible = {
 		hidden_trigger = {
-		c:SCA = THIS
+		c:SCA ?= this
 		}
 		country_rank = rank_value:great_power
 		country_has_primary_culture = cu:finnish
 	}
 
 	is_shown_when_inactive = {
-		c:SCA = THIS
+		c:SCA ?= this
 	}
 
 	fail = {

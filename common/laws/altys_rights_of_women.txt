@@ -15,8 +15,6 @@ law_full_womens_rights = {
                 has_law_or_variant = law_type:law_technocracy
                 has_law_or_variant = law_type:law_autocracy
                 has_law_or_variant = law_type:law_oligarchy
-                has_law_or_variant = law_type:law_neo_absolutism
-                has_law_or_variant = law_type:law_ancien_regime
             }
 	}
 

@@ -98,10 +98,10 @@ je_path_of_east_indies = {
 
 	possible = {
 		OR = {
-			c:DEI = {
+			c:DEI ?= {
 				is_subject_of = ROOT
 			}
-			c:IDN = {
+			c:IDN ?= {
 				is_subject_of = ROOT
 			}
 		}
