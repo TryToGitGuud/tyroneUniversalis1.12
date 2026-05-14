@@ -218,7 +218,6 @@ aus_idea_6 = {
 
 aus_idea_7 = {
 	icon = gfx/interface/intelligensia.dds
-	country_migration_restrictiveness_add = 41
 	country_authority_mult = 0.1
 }
 
