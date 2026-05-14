@@ -31,26 +31,26 @@ monthly_splender_points = {
 		limit = {
 			is_ai = no
 		}
-		add = 3		#1260 for 35 years. 
+		add = 5		#2100 for 35 years.
 	}
 	else = {
 		if = {
 			limit = {
 				has_global_variable = ve_easy
 			}
-			add = 2			#840 for 35 years.
+			add = 5			#2100 for 35 years.
 		}
 		else_if = {
 			limit = {
 				has_global_variable = ve_medium
 			}
-			add = 3			#1260 for 35 years.
+			add = 5			#2100 for 35 years.
 		}
 		else_if = {
 			limit = {
 				has_global_variable = ve_hard
 			}
-			add = 4			#1680 for 35 years. 
+			add = 5			#2100 for 35 years.
 		}
 	}
 	if = {
@@ -81,7 +81,7 @@ monthly_splender_points = {
 					navy_size >= 100
 				}
 			}
-			add = 2
+			add = 5
 		}
 		else_if = {
 			limit = {
@@ -107,7 +107,7 @@ monthly_splender_points = {
 					navy_size >= 100
 				}
 			}
-			add = 4
+			add = 10
 		}
 		else_if = {
 			limit = {
@@ -133,7 +133,7 @@ monthly_splender_points = {
 					navy_size >= 100
 				}
 			}
-			add = 6
+			add = 15
 		}
 		else_if = {
 			limit = {
@@ -159,7 +159,7 @@ monthly_splender_points = {
 					navy_size >= 100
 				}
 			}
-			add = 8
+			add = 20
 		}
 		else_if = {
 			limit = {
@@ -185,7 +185,7 @@ monthly_splender_points = {
 					navy_size >= 100
 				}
 			}
-			add = 10
+			add = 25
 		}
 		else_if = {
 			limit = {
@@ -211,7 +211,7 @@ monthly_splender_points = {
 					navy_size >= 100
 				}
 			}
-			add = 12
+			add = 30
 		}
 		else_if = {
 			limit = {
@@ -237,7 +237,7 @@ monthly_splender_points = {
 					navy_size >= 100
 				}
 			}
-			add = 14
+			add = 35
 		}
 	}
 	else_if = {
@@ -276,7 +276,7 @@ monthly_splender_points = {
 					total_population > 100000000
 				}
 			}
-			add = 2
+			add = 5
 		}
 		else_if = {
 			limit = {
@@ -310,7 +310,7 @@ monthly_splender_points = {
 					total_population > 100000000
 				}
 			}
-			add = 4
+			add = 10
 		}
 		else_if = {
 			limit = {
@@ -344,7 +344,7 @@ monthly_splender_points = {
 					total_population > 100000000
 				}
 			}
-			add = 6
+			add = 15
 		}
 		else_if = {
 			limit = {
@@ -378,7 +378,7 @@ monthly_splender_points = {
 					total_population > 100000000
 				}
 			}
-			add = 8
+			add = 20
 		}
 		else_if = {
 			limit = {
@@ -412,7 +412,7 @@ monthly_splender_points = {
 					total_population > 100000000
 				}
 			}
-			add = 10
+			add = 25
 		}
 		else_if = {
 			limit = {
@@ -446,7 +446,7 @@ monthly_splender_points = {
 					total_population > 100000000
 				}
 			}
-			add = 12
+			add = 30
 		}
 		else_if = {
 			limit = {
@@ -480,7 +480,7 @@ monthly_splender_points = {
 					total_population > 100000000
 				}
 			}
-			add = 14
+			add = 35
 		}
 	}
 	else_if = {
@@ -530,7 +530,7 @@ monthly_splender_points = {
 					global_country_ranking = 1
 				}
 			}
-			add = 2
+			add = 5
 		}
 		else_if = {
 			limit = {
@@ -575,7 +575,7 @@ monthly_splender_points = {
 					global_country_ranking = 1
 				}
 			}
-			add = 4
+			add = 10
 		}
 		else_if = {
 			limit = {
@@ -620,7 +620,7 @@ monthly_splender_points = {
 					global_country_ranking = 1
 				}
 			}
-			add = 6
+			add = 15
 		}
 		else_if = {
 			limit = {
@@ -665,7 +665,7 @@ monthly_splender_points = {
 					global_country_ranking = 1
 				}
 			}
-			add = 8
+			add = 20
 		}
 		else_if = {
 			limit = {
@@ -710,7 +710,7 @@ monthly_splender_points = {
 					global_country_ranking = 1
 				}
 			}
-			add = 10
+			add = 25
 		}
 		else_if = {
 			limit = {
@@ -755,7 +755,7 @@ monthly_splender_points = {
 					global_country_ranking = 1
 				}
 			}
-			add = 12
+			add = 30
 		}
 		else_if = {
 			limit = {
@@ -800,7 +800,7 @@ monthly_splender_points = {
 					global_country_ranking = 1
 				}
 			}
-			add = 14
+			add = 35
 		}
 	}
 }

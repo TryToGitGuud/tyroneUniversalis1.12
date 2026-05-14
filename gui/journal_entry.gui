@@ -250,6 +250,30 @@ types journal_entry_panel_types {
 					}
 				}
 
+				container = {
+					parentanchor = hcenter
+					visible = "[EqualTo_string(JournalEntry.GetName, Localize('je_internationale'))]"
+					minimumsize = { @panel_width_minus_30 -1 }
+
+					internationale_journal_button = {}
+				}
+
+				container = {
+					parentanchor = hcenter
+					visible = "[EqualTo_string(JournalEntry.GetName, Localize('je_the_internationale'))]"
+					minimumsize = { @panel_width_minus_30 -1 }
+
+					internationale_status_widget = {}
+				}
+
+				container = {
+					parentanchor = hcenter
+					visible = "[EqualTo_string(JournalEntry.GetName, Localize('je_blanquism'))]"
+					minimumsize = { @panel_width_minus_30 -1 }
+
+					blanquist_preparation_widget = {}
+				}
+
 				expand = {}
 				expand = {}
 
